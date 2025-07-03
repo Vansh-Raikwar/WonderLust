@@ -39,6 +39,6 @@ WonderLust is a dynamic travel platform where users can discover, list, and revi
 
 ### Running the App
 ```bash
-npm start
+npm run dev
 ```
-The app will be available at `http://localhost:8080` by default.
+The app will be available at `http://localhost:8080/listings` by default.
