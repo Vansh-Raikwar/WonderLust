@@ -20,7 +20,9 @@
         <%- include("../include/navbar.ejs") -%>
         <div class="container p-4 mw-100 flex-grow-1" >
             <%- include("../include/flash.ejs")-%>
+            <% if (!currUser) { %>
             <%-body-%>
+            <% } %>
         </div>
         <%- include("../include/footer.ejs") -%>
     </div>

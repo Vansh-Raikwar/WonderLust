@@ -42,7 +42,7 @@ connectDB().then(()=>[
     console.log(err);
 })
 
-app.listen(8080,()=>{
+app.listen(3000,()=>{
     console.log("server is running on port 8080");
 });
 
@@ -110,3 +110,5 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error/error.ejs",{err});
     next();
 });
+
+module.exports = app;
