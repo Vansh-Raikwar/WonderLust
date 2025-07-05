@@ -1,4 +1,5 @@
-import mongoose, { Schema, model } from "mongoose";
+const mongoose = require("mongoose");
+const { Schema, model } = mongoose;
 
 const reviewSchema = new Schema({
     message: String,
@@ -18,4 +19,4 @@ const reviewSchema = new Schema({
 });
 
 const Review = model("Review", reviewSchema);
-export default Review;
+module.exports = Review;
