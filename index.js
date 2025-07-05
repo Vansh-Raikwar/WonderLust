@@ -42,7 +42,7 @@ connectDB().then(()=>[
     console.log(err);
 })
 
-app.listen(3000,()=>{
+app.listen(8080,()=>{
     console.log("server is running on port 8080");
 });
 
@@ -66,7 +66,7 @@ const session_option = {
         httpOnly: true,
     },
 };
-store.on("error",()=>{
+store.on("error",(err)=>{
     console.log("Error in session store",err);
 })
 
