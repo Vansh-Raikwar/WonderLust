@@ -34,7 +34,7 @@ const listingSchema = new Schema({
 });
 
 const model = require("./model.js");
-const Review = require("./review.js").default;
+const Review = require("./review.js");
 
 listingSchema.post("findOneAndDelete", async (listing) => {
     if (listing) {
