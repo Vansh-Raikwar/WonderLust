@@ -1,4 +1,4 @@
-const Review = require("../models/review.js").default;
+const Review = require("../models/review.js");
 const model = require('../models/model.js');
 
 
